@@ -7,6 +7,15 @@ public class Main {
 
         Job workingDeveloper = new WorkingJobDecorator(new Developer());
 
-        Job testerQI
+        Job workingQI = new WorkingJobDecorator(new QI());
+
+        System.out.println("\nJob concrete");
+        developer.perform();
+
+        System.out.println("\nWhat does developer");
+        workingDeveloper.perform();
+
+        System.out.println("\nWhat does QI");
+        workingQI.perform();
     }
 }
