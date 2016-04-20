@@ -3,6 +3,10 @@ package com.esseckers.decorator_pattern;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Job developer = new Developer();
+
+        Job workingDeveloper = new WorkingJobDecorator(new Developer());
+
+        Job testerQI
     }
 }
