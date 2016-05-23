@@ -18,7 +18,7 @@ public class Project {
         this.manager = new Manager();
     }
 
-    public void createProject() {
+    public void createProduct() {
         if (!developer.develop(false)) {
             teamLead.help();
         }
